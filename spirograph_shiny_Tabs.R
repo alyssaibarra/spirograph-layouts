@@ -3,6 +3,7 @@ library(ggplot2)
 library(plotly)
 library(tibble)
 
+
 spiro <- function(n1,n2,n3) {
   t <- seq(0,1,length.out=1000)
   z <- exp(1i*2*pi*n1*t) + exp(1i*2*pi*n2*t) + exp(1i*2*pi*n3*t)
